@@ -1,5 +1,6 @@
-fetch('flag.txt')
-  .then(response => response.text())
-  .then(text => {
-    console.log(text);
-  })
+import { readFile } from 'fs';
+
+readFile('flag.txt', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
