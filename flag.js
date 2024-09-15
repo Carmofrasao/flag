@@ -2,5 +2,7 @@ import { readFile } from 'fs';
 
 readFile('flag.txt', (err, data) => {
   if (err) throw err;
-  alert(data);
+  document.open();
+  document.write(data);
+  document.close();
 });
