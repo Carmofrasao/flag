@@ -1,1 +1,1 @@
-CTF-BR{fakeflag}
+console.log(flag.txt);
